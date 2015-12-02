@@ -1,0 +1,18 @@
+<ion-view view-title="Account" class="background-dark">
+    >
+
+    <ion-content ng-controller="NotificationCtrl">
+        <div class="list">
+            <div class="list card">
+                <div class="item item-divider">App Settings</div>
+                <ion-toggle ng-model="settings.paperlessBilling" ng-click="paperlessBillingToggle()">
+                    Paperless Billing
+                </ion-toggle>
+            </div>
+            <div class="list card">
+                <div class="item item-divider">Notifications</div>
+                <ion-toggle ng-model="notificationSettings.newBills" ng-click="add()">New Bills</ion-toggle>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

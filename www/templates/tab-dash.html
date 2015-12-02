@@ -1,0 +1,41 @@
+<ion-view view-title="Dashboard" class="background-dark">
+    <ion-content class="padding">
+        <div class="list card">
+            <div class="item item-divider">Alerts</div>
+            <div class="item item-body">
+                <div>
+                    There is a water main break in <b>sector 3</b>
+                </div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Service Team</div>
+            <div class="item item-body">
+                <div>
+                    Truck #24 will not start
+                </div>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Upcoming</div>
+            <div class="item item-body">
+                <div>
+                    Today - 482 Main Street - Meter Read.
+                </div>
+            </div>
+        </div>
+        <div class="list card" ng-show="lastMeterRead.serviceAddress1 < 0">
+            <div class="item item-divider">Latest Meter Reads</div>
+            <div class="item item-body">
+                <div>
+                    <img ng-src="{{ lastPhoto }}" style="max-width: 100%">
+                </div>
+                <div>Service Address:</div>
+                <div>
+                    {{ lastMeterRead.serviceAddress1}}<br />
+                    {{ lastMeterRead.serviceAddress2}}
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

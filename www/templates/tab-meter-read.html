@@ -1,0 +1,41 @@
+﻿<ion-view view-title="New Meter Read" class="background-dark">
+    <ion-content class="padding">
+        <div class="list card">
+            <div class="item item-divider">Service Address</div>
+            <label class="item item-input">
+                <input type="text" placeholder="Street">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="City/Township">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="State">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="ZIP">
+            </label>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Meter Reading</div>
+            <label class="item item-input">
+                <input type="text" placeholder="Read Date">
+            </label>
+            <label class="item item-input">
+                <input type="text" placeholder="Enter a Manual Read">
+            </label>
+            <div class="text-center padding">OR</div>
+            <div class="text-center"><button ng-click="getPhoto()" class="button button-calm icon ion-camera"> Take a Photo</button></div>
+            <div class="item" ng-show="hasPhoto == true">
+                <div class="item">
+                    <img ng-src="{{ lastPhoto }}" style="max-width: 100%">
+                </div>
+            </div>
+        </div>
+        
+       
+        
+        <div class="text-center"><button class="button button-full button-calm" ng-click="submitReading()">Submit Reading</button></div>
+       
+        
+    </ion-content>
+</ion-view>
