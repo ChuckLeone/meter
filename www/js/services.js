@@ -6,33 +6,28 @@ angular.module('starter.services', [])
     // Some fake testing data
     var chats = [{
         id: 0,
-        name: '47 Fourth Ave, Lancaster NY 14086',
-        lastText: '4/5/2015',
+        name: 'Meter read: 009009',
+        lastText: '4/5/2016',
         face: 'img/ionic.png'
     }, {
         id: 1,
-        name: '154 Clinton St, Elma NY 14087',
-        lastText: '4/5/2015',
+         name: 'Meter read: 004288',
+        lastText: '3/5/2016',
         face: 'img/ionic.png'
     }, {
         id: 2,
-        name: '43 Fourth Ave, Lancaster NY 14086',
-        lastText: '4/5/2015',
+         name: 'Meter read: 001288',
+        lastText: '1/5/2016',
         face: 'img/ionic.png'
     }, {
         id: 3,
-        name: '42 Fourth Ave, Lancaster NY 14086',
-        lastText: '4/5/2015',
+        name: 'Meter read: 010001',
+        lastText: '12/5/2015',
         face: 'img/ionic.png'
     }, {
         id: 4,
-        name: '36 Fourth Ave, Lancaster NY 14086',
-        lastText: '4/5/2015',
-        face: 'img/ionic.png'
-    }, {
-        id: 5,
-        name: '12 Fourth Ave, Lancaster NY 14086',
-        lastText: '4/5/2015',
+        name: 'Meter read: 000291',
+        lastText: '11/5/2015',
         face: 'img/ionic.png'
     }];
 
